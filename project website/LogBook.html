@@ -60,60 +60,39 @@
           <h1>Log Book</h1>
         </div>
       </div>
-      <div class="row"  >
-        <div class="col-12" style="align-self: center;">
-          <h2 style="text-align: center;">Week 1 </h2>    
-        </div>  
+
+      <div id="ko" data-bind="if:logs">
+        <!-- ko foreach:logs -->
+          <div class="col-12" style="align-self: center;">
+            <h2 style="text-align: center;" data-bind="text:week"></h2>    
+            <h4 style="text-align: center;" data-bind="text:period"></h4>    
+          </div>       
+          <div class="row"  >
+            <div class="col-12" style="align-self: center;">
+
+              <!-- ko foreach:activities -->
+                <p class="mb-1">
+                  <span class="font-weight-bold" data-bind="text:name"></span>
+                  <span data-bind="text:day+' '+beginning +'-'+end"></span>
+                </p>
+                <p class="mb-3" data-bind="text:description"></p>
+              <!-- /ko -->
+
+              <!-- ko if:activities.length==0 -->
+                <p style="text-align: center;">?</p>    
+              <!-- /ko -->
+
+            </div>  
+          </div>
+
+          
+          <div class="col-12" style="height: 150px;">
+            <div class="vl"></div>
+          </div>
+          
+
+        <!-- /ko -->
       </div>
-      <div class="row"  >
-        <div class="col-12" style="align-self: center;">
-          <h4 style="text-align: center;">15/03 - 21/03 </h4>    
-        </div>  
-      </div>
-      <div class="row"  >
-        <div class="col-12" style="align-self: center;">
-          <p><b>Team meeting 15/03 15h-15h30</b></p>
-          <p>
-            Creation of github repo, slack workspace and google drive. Deciding the date for the next meeting with mentor .
-          </p>
-          <br>
-          <p><b>Mentor meeting 17/03 18:30h-19h20</b></p>
-          <p>
-            Explanation of the products context. Discussion of the project goals. Establishing a week mentor meeting date (Wednsdays at 18:30pm).
-          </p>
-          <br>  
-          <p><b>Team meeting 18/03 18:30h-19h08</b></p>
-          <p>
-            Division of work for M1. Establishing a fixed team meeting date twice a week (Mondays at 21pm, Fridays at 16pm).
-          </p>
-        </div>  
-      </div>
-      <div class="row" >
-        <div class="col-12" style="height: 150px;">
-          <div class="vl"></div>
-        </div>
-      </div>
-      <div class="row"  >
-        <div class="col-12" style="align-self: center;">
-          <h2 style="text-align: center;">Week 2 </h2>    
-        </div>  
-      </div>
-      <div class="row"  >
-        <div class="col-12" style="align-self: center;">
-          <h4 style="text-align: center;">22/03 - 28/03 </h4>    
-        </div>  
-      </div>
-      <div class="row"  >
-        <div class="col-12" style="align-self: center;">
-          <p style="text-align: center;">?</p>    
-        </div>  
-      </div>
-      <div class="row" >
-        <div class="col-12" style="height: 150px;">
-          <div class="vl"></div>
-        </div>
-      </div>
-      <br>
     </div>
 
 
@@ -191,7 +170,10 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
 
+    <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
+
     <script src="js/main.js"></script>
+    <script src="js/logbook.js"></script>
 
     
   </body>
