@@ -190,6 +190,7 @@ h1, h2, h3, h4, h5,
   position: relative;
   overflow: hidden; }
   .ftco-slant:after {
+    display: none;
     width: 120%;
     height: 200px;
     left: -10%;
