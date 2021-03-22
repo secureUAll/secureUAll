@@ -51,14 +51,14 @@
     </nav>
     <!-- END nav -->
 
-    <div class="container">
+    <div class="container" id="ko">
       
       <div class="row" >
         <div class="col-12" >
           <h1>Log Book</h1>
         </div>
       </div>
-      <!--
+      
       <section class="ftco-section ftco-slant" id="section-counter" style="padding-bottom:150px;padding-top:50px;">
         <div class="row mb-5">
           <div class="col-md-12 text-center ftco-animate">
@@ -72,28 +72,37 @@
         </div>
         
         <div class="row">
-          <div class="col-md ftco-animate">
+          <div class="col-md">
             <div class="ftco-counter text-center">
-              <span class="ftco-number" data-number="4">0</span>
+              <span class="ftco-number" id="animateMeetings">0</span>
               <span class="ftco-label">Meetings</span>
             </div>
           </div>
           <div class="col-md ftco-animate">
             <div class="ftco-counter text-center">
-              <span class="ftco-number" data-number="15">0</span>
+              <span class="ftco-number" id="animateHours">0</span>
               <span class="ftco-label">Working Hours</span>
             </div>
           </div>
           <div class="col-md ftco-animate">
-            <div class="ftco-counter text-center">
-              <span class="ftco-number" data-number="16">0</span>
-              <span class="ftco-label">Git Commits</span>
+            <div 
+              class="ftco-counter text-center"
+            >
+              <span class="ftco-number" id="animateCommits">0</span>
+              <span class="ftco-label">
+                Git Commits 
+                <!-- ko if:commitsDate!=null-->
+                <br>
+                Last update <span data-bind="text:commitsDate"></span>
+                <!-- /ko -->
+              </span>
             </div>
           </div>    
         </div>
       </section>
-      -->
-      <div id="ko" data-bind="if:logs">
+      
+      
+      <div data-bind="if:logs">
         <!-- ko foreach:logs -->
           <div class="col-12" style="align-self: center;">
             <h2 style="text-align: center;" data-bind="text:week"></h2>    
@@ -150,10 +159,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-
     <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
 
     <script src="js/main.js"></script>
