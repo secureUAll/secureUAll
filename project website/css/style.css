@@ -23,20 +23,6 @@ h1, h2, h3, h4, h5,
   font-weight: normal;
   color: #000; }
 
-.b{
-  color: #000;
-  margin-left: 20px;
-  padding-left: 20px;
-  font-size: 17px;
-}
-
-.ba{
-  color: #8058be;
-  margin-left: 20px;
-  padding-left: 20px;
-  font-size: 17px;
-}
-
 .text-primary {
   color: #8058be !important; }
 
@@ -572,4 +558,41 @@ textarea {
 .py-6 {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
+}
+
+.badge {
+  font-size: 100%!important;
+}
+
+.badge-outline-primary {
+  border:  1px solid #8058be;
+  color: #8058be;
+}
+
+.badge-outline-primary:hover {
+  border:  1px solid #8058be;
+  background-color: #8058be;
+  color: #fff;
+}
+
+.card {
+  background-color: #f2f2f2!important;
+  border-radius: 0!important;
+  border: none!important;
+}
+
+.btn-link {
+  color: #8058be!important;
+}
+
+.btn-link:hover {
+  color: #6940a5!important;
+}
+
+.navbar-not-home .navbar-nav > .nav-item > .nav-link {
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
