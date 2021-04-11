@@ -283,12 +283,6 @@ textarea {
 .bg-primary {
   background: #8058be !important; }
 
-.ftco-section,
-.ftco-footer {
-  padding: 7em 0 7em 0; }
-  .ftco-section.ftco-slant,
-  .ftco-footer.ftco-slant {
-    padding: 7em 0 22em 0; }
   .ftco-section .ftco-heading,
   .ftco-footer .ftco-heading {
     font-size: 40px;
@@ -574,3 +568,8 @@ textarea {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.py-6 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
