@@ -204,14 +204,51 @@
           
         </div>
       </section>
-      <section id="section-requirements">
+
+      <!-- Use cases -->
+      <section id="section-requirements" class="pt-5">
         <div class="container">
           <br>
           <div class="row">
             <h2>Requirements</h2>
           </div>
           <div class="row">
-            <h4>Another section</h4>  
+            <div class="col-6 pl-0">
+              <h4>Functional</h4>  
+              <ul class="list-unstyled ftco-list-check text-left">
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Dashboard</span></li>
+                <li class="d-flex mb-2">Web platform available 24/7 through UA IDP access that allows the system management and vulnerability monitoring.</li>
+
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Scrapping</span></li>
+                <li class="d-flex mb-2">With a configurable periodicity and with several levels (from the less to the most evasive), it recurs to external pluggable tools.</li>
+
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Alerts</span></li>
+                <li class="d-flex mb-2">Email sent every time a vunerability is detected. It informs the manager that of its existance and suggests possible corrections.</li>
+
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Vulnerability Analysis</span></li>
+                <li class="d-flex mb-2">Based on the data gathered by scrapping tools, the risk level is computed based on CVSS and the vulnerability scan.</li>
+
+              </ul>
+            </div>
+            <div class="col-6 pr-0">
+              <h4>Non Functional</h4>  
+              <ul class="list-unstyled ftco-list-check text-left">
+                <li class="d-flex mb-1 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Scalability</span></li>
+                <li class="d-flex mb-2">The work is distributed by workers in order to respond to high demand.</li>
+                
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Portability</span></li>
+                <li class="d-flex mb-2">A container implementation allows a simple deploy in different execution environments.</li>
+
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Usability</span></li>
+                <li class="d-flex mb-2">An intuitive interface for management and control that allows a good user experience.</li>
+
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Privacy</span></li>
+                <li class="d-flex mb-2">Ensure that personal data eventually obtained during scans is not stored.</li>
+
+                <li class="d-flex mb-2 text-dark font-weight-bold"><span class="oi oi-check mr-3 text-primary"></span> <span>Security</span></li>
+                <li class="d-flex mb-2">Only authorized people (administrators, owners and subscribers) have access to machine related data and reports.</li>
+              </ul>
+            </div>
           </div>
   
           
