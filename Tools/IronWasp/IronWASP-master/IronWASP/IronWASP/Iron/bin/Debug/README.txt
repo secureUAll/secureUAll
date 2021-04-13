@@ -1,1 +1,0 @@
-Paste the files available from http://ironwasp.org/download.html in to this directory.
