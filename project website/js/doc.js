@@ -18,6 +18,11 @@ const colors = {
         "color": "#34855A",
         "dark": "#2b6e4a",
         "light": "#40a56f"
+    },
+    'today': {
+        "color": "#00ffff",
+        "dark": "#00cccc",
+        "light": "#33ffff"
     }
 }
 
@@ -37,13 +42,25 @@ function drawChart(apiData, elId, width) {
     data.addColumn('number', 'Percent Complete');
     data.addColumn('string', 'Dependencies');
 
-    var rows = [];
+    const today = new Date();
+    const tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
+    var rows = [
+        [
+            'Today', 
+            'Today', 
+            'Today', 
+            today,
+            tomorrow, 
+            86400000, 
+            100, 
+            null 
+        ]
+    ];
 
     apiData.some((obj, ind) => {
         if( !obj['taskid'] ) {
             return null;
         }
-        console.log(obj);
         rows.push([
             obj['taskid'],
             obj['tarefa'],
@@ -52,7 +69,7 @@ function drawChart(apiData, elId, width) {
             new Date(`${obj['end'].split("/")[2]}-${obj['end'].split("/")[1]}-${obj['end'].split("/")[0]}`),
             obj['durationmilliseconds'],
             obj['percentcomplete'],
-            obj['dependencies']!=0 ? obj['dependencies'] : null
+            null // obj['dependencies']!=0 ? obj['dependencies'] : null
         ]);
     })
 
@@ -67,6 +84,7 @@ function drawChart(apiData, elId, width) {
             }
         }
     }).filter(c => c!=undefined);
+    chartColors.push(colors['today']);
 
     var options = {
         height: 45*rows.length + 20,
