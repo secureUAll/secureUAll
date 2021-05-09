@@ -600,3 +600,8 @@ textarea {
 a.text-primary:focus, a.text-primary:hover {
   color: #6940a5!important;
 }
+
+.badge-colector{background-color: #0F1A3E;}
+.badge-frontend{background-color: #B7458C;}
+.badge-db{background-color: #C91FD8;}
+.badge-worker{background-color: #34855A;}

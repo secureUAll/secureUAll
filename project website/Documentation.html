@@ -446,9 +446,45 @@
 
 
       <br>
-      <div class=" mt-5">
+      <div class="mt-5" id="milestone3">
         <h3>Milestone 3 </h3>
       </div>
+      <div class="">
+        <a href="#" class="badge badge-outline-primary mr-2"><i
+            class="far fa-file-powerpoint"></i> Presentation</a>
+      </div>
+
+      <!-- M3 DOC -->
+      <div class=" mt-4">
+        <div class="accordion col-12 p-0" id="accordionM3">
+
+          <!-- M1 DOC // Related Work -->
+          <div class="card">
+            <div class="card-header" id="headingRelatedWork">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSchedule"
+                  aria-expanded="true" aria-controls="collapseSchedule">
+                  Schedule
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSchedule" class="collapse" aria-labelledby="headingRelatedWork"
+              data-parent="#accordionM3">
+              <div class="card-body">
+                <div class="row mx-0 p-0 mb-2">
+                  <p class="mb-0 mr-2">Legenda:</p>
+                  <span class="mr-2 badge badge-colector">Colector</span>
+                  <span class="mr-2 badge badge-frontend">Frontend</span>
+                  <span class="mr-2 badge badge-db">DB</span>
+                  <span class="mr-2 badge badge-worker">Worker</span>
+                </div>
+                <div id="schedule_chart" ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <br>
       <div class=" mt-5">
         <h3>Milestone 4 </h3>
@@ -487,8 +523,10 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script src="js/main.js"></script>
+  <script src="js/doc.js"></script>
 
 
 </body>
