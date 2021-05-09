@@ -20,9 +20,9 @@ const colors = {
         "light": "#40a56f"
     },
     'today': {
-        "color": "#00ffff",
-        "dark": "#00cccc",
-        "light": "#33ffff"
+        "color": "#33ccff",
+        "dark": "#00bfff",
+        "light": "#66d9ff"
     }
 }
 
@@ -44,18 +44,7 @@ function drawChart(apiData, elId, width) {
 
     const today = new Date();
     const tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
-    var rows = [
-        [
-            'Today', 
-            'Today', 
-            'Today', 
-            today,
-            tomorrow, 
-            86400000, 
-            100, 
-            null 
-        ]
-    ];
+    var rows = [];
 
     apiData.some((obj, ind) => {
         if( !obj['taskid'] ) {
@@ -73,9 +62,20 @@ function drawChart(apiData, elId, width) {
         ]);
     })
 
+    rows.push([
+        'Today', 
+        'Today', 
+        'Today', 
+        today,
+        tomorrow, 
+        86400000, 
+        100, 
+        null 
+    ]);
+
     data.addRows(rows);
 
-    const labelsOrdered = apiData.map(obj => obj['componente']).filter((v, i, a) => a.indexOf(v) === i);
+    const labelsOrdered = rows.map(r => r[2]).filter((v, i, a) => a.indexOf(v) === i);
     const chartColors = labelsOrdered.map(label => {
         if (typeof(label)=="string") {
             const key = Object.keys(colors).filter(c => label.toLowerCase().indexOf(c.toLowerCase())>-1);
@@ -84,7 +84,7 @@ function drawChart(apiData, elId, width) {
             }
         }
     }).filter(c => c!=undefined);
-    chartColors.push(colors['today']);
+    // chartColors.push(colors['today']);
 
     var options = {
         height: 45*rows.length + 20,
@@ -129,3 +129,9 @@ $(document).ready(function () {
     });
 
 });
+
+/**
+ * Commands to make gantt chart invisble for screen shots
+ * $("rect").attr("fill", "rgba(0,0,0,0)")
+ * $("line").attr("stroke", "rgba(0,0,0,0)")
+ */
