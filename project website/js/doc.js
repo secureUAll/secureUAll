@@ -14,7 +14,7 @@ const colors = {
         "dark": "#a619b3",
         "light": "#d436e2"
     },
-    'worker': { // Worker
+    'workers': { // Worker
         "color": "#34855A",
         "dark": "#2b6e4a",
         "light": "#40a56f"
