@@ -447,7 +447,7 @@
 
       <br>
       <div class="mt-5" id="milestone3">
-        <h3>Milestone 3 </h3>
+        <h3>Milestone 3 - 10/05</h3>
       </div>
       <div class="">
         <a href="#" class="badge badge-outline-primary mr-2"><i
@@ -458,7 +458,7 @@
       <div class=" mt-4">
         <div class="accordion col-12 p-0" id="accordionM3">
 
-          <!-- M1 DOC // Related Work -->
+          <!-- M3 DOC // Schedule -->
           <div class="card">
             <div class="card-header" id="headingRelatedWork">
               <h5 class="mb-0">
@@ -477,8 +477,11 @@
                   <span class="mr-2 badge badge-frontend">Frontend</span>
                   <span class="mr-2 badge badge-db">DB</span>
                   <span class="mr-2 badge badge-worker">Worker</span>
+                  <a href="#" class="badge badge-outline-primary ml-auto" data-toggle="modal" data-target="#M3ModalSchedule"><i class="fas fa-expand"></i> Full screen</a>
                 </div>
-                <div id="schedule_chart" ></div>
+                <div id="schedule_chart">
+                  A carregar o gráfico. Se demorar muito tempo recarregue a página.
+                </div>
               </div>
             </div>
           </div>
@@ -509,6 +512,32 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#4586ff" />
     </svg></div>
+
+  <!-- Modals -->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="M3ModalScheduleLabel" aria-hidden="true" id="M3ModalSchedule">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">M3 | Schedule</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row mx-0 p-0 mb-2">
+            <p class="mb-0 mr-2">Legenda:</p>
+            <span class="mr-2 badge badge-colector">Colector</span>
+            <span class="mr-2 badge badge-frontend">Frontend</span>
+            <span class="mr-2 badge badge-db">DB</span>
+            <span class="mr-2 badge badge-worker">Worker</span>
+          </div>
+          <div id="schedule_chart_modal">
+            A carregar o gráfico. Se demorar muito tempo recarregue a página.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="js/jquery.min.js"></script>

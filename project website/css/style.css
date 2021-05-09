@@ -605,3 +605,7 @@ a.text-primary:focus, a.text-primary:hover {
 .badge-frontend{background-color: #B7458C;}
 .badge-db{background-color: #C91FD8;}
 .badge-worker{background-color: #34855A;}
+
+.modal-lg {
+  max-width: 90%!important;
+}
