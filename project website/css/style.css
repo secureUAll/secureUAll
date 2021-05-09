@@ -596,3 +596,7 @@ textarea {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+a.text-primary:focus, a.text-primary:hover {
+  color: #6940a5!important;
+}
