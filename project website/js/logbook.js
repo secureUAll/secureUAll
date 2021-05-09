@@ -19,6 +19,7 @@ $(document).ready(function () {
 
         self.logs = ko.observable(null);
         self.commitsDate = ko.observable(null);
+        self.PRsDate = ko.observable(null);
 
         // Get log data from API
         $.ajax({
@@ -92,6 +93,20 @@ $(document).ready(function () {
                 self.commitsDate(data['rows'][data['rows'].length -1]['date']);
                 $("#animateCommits").animateNumber(
                     { number: data['rows'][data['rows'].length -1]['commits'] },
+                    { easing: 'swing', duration: 1000}
+                );
+            }
+        });
+
+        // Get commits data from API
+        $.ajax({
+            type: "GET",
+            url: "http://gsx2json.com/api?id=1bSYkXeiBynJszxFCmmmRslO4wSW1CU6rzLB0C15iErM&sheet=3",
+            dataType: "json",
+            success: function (data) {
+                self.PRsDate(data['rows'][data['rows'].length -1]['date']);
+                $("#animatePRs").animateNumber(
+                    { number: data['rows'][data['rows'].length -1]['pullrequests'] },
                     { easing: 'swing', duration: 1000}
                 );
             }

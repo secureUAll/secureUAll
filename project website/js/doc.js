@@ -28,7 +28,7 @@ $(document).ready(function () {
     // Get log data from API
     $.ajax({
         type: "GET",
-        url: "http://gsx2json.com/api?id=1bSYkXeiBynJszxFCmmmRslO4wSW1CU6rzLB0C15iErM&sheet=3",
+        url: "http://gsx2json.com/api?id=1bSYkXeiBynJszxFCmmmRslO4wSW1CU6rzLB0C15iErM&sheet=4",
         dataType: "json",
         success: function (data) {
             // data[rows] is object with keys: taskid, taskname, resource, start, end, durationmilliseconds, percentcomplete, dependencies

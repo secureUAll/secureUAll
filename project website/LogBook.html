@@ -90,7 +90,21 @@
                 <!-- /ko -->
               </span>
             </div>
-          </div>    
+          </div>
+          <div class="col-md ftco-animate">
+            <div 
+              class="ftco-counter text-center"
+            >
+              <span class="ftco-number" id="animatePRs">0</span>
+              <span class="ftco-label">
+                Git Pull Requests 
+                <!-- ko if:PRsDate!=null-->
+                <br>
+                Last update <span data-bind="text:PRsDate"></span>
+                <!-- /ko -->
+              </span>
+            </div>
+          </div>
         </div>
       </section>
       
