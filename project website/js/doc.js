@@ -1,8 +1,8 @@
 const colors = {
     'colector': { // Coletor
-        "color": "#0F1A3E",
-        "dark": "#050915",
-        "light": "#192b67"
+        "color": "#33ccff",
+        "dark": "#00bfff",
+        "light": "#66d9ff"
     },
     'frontend': { // Frontend
         "color": "#B7458C",
@@ -20,9 +20,9 @@ const colors = {
         "light": "#40a56f"
     },
     'today': {
-        "color": "#33ccff",
-        "dark": "#00bfff",
-        "light": "#66d9ff"
+        "color": "#0F1A3E",
+        "dark": "#050915",
+        "light": "#192b67"
     }
 }
 
@@ -47,7 +47,7 @@ function drawChart(apiData, elId, width) {
     var rows = [];
 
     apiData.some((obj, ind) => {
-        if( !obj['taskid'] ) {
+        if( !obj['taskid'] /* || obj['componente']!="Workers" */ ) {
             return null;
         }
         rows.push([
@@ -58,7 +58,7 @@ function drawChart(apiData, elId, width) {
             new Date(`${obj['end'].split("/")[2]}-${obj['end'].split("/")[1]}-${obj['end'].split("/")[0]}`),
             obj['durationmilliseconds'],
             obj['percentcomplete'],
-            null // obj['dependencies']!=0 ? obj['dependencies'] : null
+            obj['dependencies']!=0 ? obj['dependencies'] : null
         ]);
     })
 
@@ -117,15 +117,11 @@ $(document).ready(function () {
     });
 
     $('#collapseSchedule').on('shown.bs.collapse', function () {
-        if (apiData != null && $("#schedule_chart").html().length<150) {
-            drawChart(apiData, 'schedule_chart', $("#accordionM3 .card-header").width());
-        }
+        drawChart(apiData, 'schedule_chart', $("#accordionM3 .card-header").width());
     })
 
     $('#M3ModalSchedule').on('shown.bs.modal', function (e) {
-        if (apiData != null && $("#schedule_chart_modal").html().length<150) {
-            drawChart(apiData, 'schedule_chart_modal', $('#M3ModalSchedule .modal-lg').width()-50);
-        }
+        drawChart(apiData, 'schedule_chart_modal', $('#M3ModalSchedule .modal-lg').width()-50);
     });
 
 });
