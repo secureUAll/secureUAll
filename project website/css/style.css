@@ -12,10 +12,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #8058be; }
+  color: #92d400; }
   a:hover {
     text-decoration: none;
-    color: #8058be; }
+    color: #92d400; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5,
   color: #000; }
 
 .text-primary {
-  color: #8058be !important; }
+  color: #92d400 !important; }
 
 
 .ftco-navbar-light {
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.7rem !important;
       color: #000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #8058be !important; }
+        color: #92d400 !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       left: 0;
       right: 0;
-      background: #8058be;
+      background: #92d400;
       height: 2px;
       content: " "; }
   .ftco-cover.overlay {
@@ -220,12 +220,12 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn.btn-primary {
-    background: #8058be;
-    border-color: #8058be;
+    background: #92d400;
+    border-color: #92d400;
     color: #fff; }
     .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
-      border-color: #6940a5;
-      background: #6940a5; }
+      border-color: #7ab300;
+      background: #7ab300; }
   .btn.btn-outline-white {
     border-color: rgba(255, 255, 255, 0.2);
     background: none; }
@@ -267,7 +267,7 @@ textarea {
   visibility: hidden; }
 
 .bg-primary {
-  background: #8058be !important; }
+  background: #92d400 !important; }
 
   .ftco-section .ftco-heading,
   .ftco-footer .ftco-heading {
@@ -296,7 +296,7 @@ textarea {
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.3); }
     .ftco-footer a:hover {
-      color: #8058be; }
+      color: #92d400; }
   .ftco-footer .ftco-heading {
     font-size: 24px; }
   .ftco-footer .ftco-heading-2 {
@@ -313,7 +313,7 @@ textarea {
     font-size: 14px;
     margin-top: -16px;
     right: 0;
-    background: #8058be;
+    background: #92d400;
     color: #fff;
     padding: 2px 10px;
     position: absolute;
@@ -367,12 +367,12 @@ textarea {
   .footer-small-nav > li a {
     margin: 0 10px 10px 0; }
     .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
-      color: #8058be; }
+      color: #92d400; }
 
 .media .ftco-icon {
   width: 100px; }
   .media .ftco-icon span {
-    color: #8058be; }
+    color: #92d400; }
 
 .ftco-media {
   background: #fff;
@@ -406,7 +406,7 @@ textarea {
     .ftco-owl .owl-nav .owl-next {
       position: absolute;
       font-size: 30px;
-      background: #8058be;
+      background: #92d400;
       color: #fff;
       padding: 10px;
       line-height: 0; }
@@ -429,7 +429,7 @@ textarea {
         display: inline-block;
         margin: 5px 7px; }
       .ftco-owl .owl-dots .owl-dot.active span {
-        background: #8058be; }
+        background: #92d400; }
   .ftco-owl:hover .owl-nav {
     visibility: visible;
     opacity: 1; }
@@ -442,7 +442,7 @@ textarea {
   display: block;
   font-size: 72px;
   font-weight: bold;
-  color: #8058be; }
+  color: #92d400; }
 
 .ftco-counter .ftco-label {
   font-size: 12px;
@@ -565,13 +565,13 @@ textarea {
 }
 
 .badge-outline-primary {
-  border:  1px solid #8058be;
-  color: #8058be;
+  border:  1px solid #92d400;
+  color: #92d400;
 }
 
 .badge-outline-primary:hover {
-  border:  1px solid #8058be;
-  background-color: #8058be;
+  border:  1px solid #92d400;
+  background-color: #92d400;
   color: #fff;
 }
 
@@ -582,11 +582,11 @@ textarea {
 }
 
 .btn-link {
-  color: #8058be!important;
+  color: #92d400!important;
 }
 
 .btn-link:hover {
-  color: #6940a5!important;
+  color: #7ab300!important;
 }
 
 .navbar-not-home .navbar-nav > .nav-item > .nav-link {
@@ -598,7 +598,7 @@ textarea {
 }
 
 a.text-primary:focus, a.text-primary:hover {
-  color: #6940a5!important;
+  color: #7ab300!important;
 }
 
 .badge-colector{background-color: #33ccff;}
