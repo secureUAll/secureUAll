@@ -601,10 +601,10 @@ a.text-primary:focus, a.text-primary:hover {
   color: #7ab300!important;
 }
 
-.badge-colector{background-color: #33ccff;}
-.badge-frontend{background-color: #B7458C;}
-.badge-db{background-color: #C91FD8;}
-.badge-worker{background-color: #34855A;}
+.badge-colector{background-color: #4d4d4d;}
+.badge-frontend{background-color: #92d400;}
+.badge-db{background-color: #578000;}
+.badge-worker{background-color: #1a1a1a;}
 
 .modal-lg {
   max-width: 90%!important;

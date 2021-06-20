@@ -1,23 +1,23 @@
 const colors = {
     'colector': { // Coletor
-        "color": "#33ccff",
-        "dark": "#00bfff",
-        "light": "#66d9ff"
+        "color": "#4D4D4D",
+        "dark": "#333333",
+        "light": "#4D4D4D"
     },
     'frontend': { // Frontend
-        "color": "#B7458C",
-        "dark": "#943871",
-        "light": "#c05998"
+        "color": "#92D400",
+        "dark": "#7AB300",
+        "light": "#92D400"
     },
     'db': { // DB
-        "color": "#C91FD8",
-        "dark": "#a619b3",
-        "light": "#d436e2"
+        "color": "#578000",
+        "dark": "#344d00",
+        "light": "#578000"
     },
     'workers': { // Worker
-        "color": "#34855A",
-        "dark": "#2b6e4a",
-        "light": "#40a56f"
+        "color": "#1a1a1a",
+        "dark": "#000000",
+        "light": "#1a1a1a"
     },
     'today': {
         "color": "#0F1A3E",
