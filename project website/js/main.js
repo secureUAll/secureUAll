@@ -13,7 +13,7 @@ $(document).ready(function($) {
 	loader();
 
 	var carousel = function() {
-		$('.owl-carousel').owlCarousel({
+		$('#owl-carousel-coms').owlCarousel({
 			loop: true,
 			margin: 10,
 			nav: true,
@@ -34,6 +34,23 @@ $(document).ready(function($) {
 		});
 	};
 	carousel();
+
+	var carouselPlatform = function() {
+		$('#owl-carousel-platform').owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: true,
+			stagePadding: 5,
+			dots: false,
+			navText: ['<span class="icon-chevron-left">', '<span class="icon-chevron-right">'],
+			responsive:{
+				0:{
+					items: 1
+				}
+			}
+		});
+	};
+	carouselPlatform();
 
 	// scroll
 	var scrollWindow = function() {
