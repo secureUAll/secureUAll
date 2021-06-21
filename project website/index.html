@@ -35,7 +35,7 @@
             <li class="nav-item my-auto"><a href="#section-about" class="nav-link py-0 pb-1">About</a></li>
             <li class="nav-item my-auto"><a href="#section-features" class="nav-link py-0 pb-1">Goals</a></li>
             <li class="nav-item my-auto"><a href="#section-platform" class="nav-link py-0 pb-1">Platform</a></li>
-            <li class="nav-item my-auto"><a href="#section-demo" class="nav-link py-0 pb-1">Demo</a></li>
+            <li class="nav-item my-auto"><a href="#section-demo" class="nav-link py-0 pb-1">Presentation/Demo</a></li>
             <li class="nav-item my-auto"><a href="#section-team" class="nav-link py-0 pb-1">Team</a></li>
             <li class="nav-item my-auto"><a href="#section-calendar" class="nav-link py-0 pb-1">Calendar</a></li>
             <li class="nav-item my-auto"><a href="#section-communication" class="nav-link py-0 pb-1">Communication</a></li>
@@ -55,10 +55,10 @@
             <h2 class="h5 ftco-subheading ftco-animate">University of Aveiro </h2>
             <div class="d-flex flex-column mt-3">
               <a href="https://deti-vuln-mon.ua.pt/" class="btn btn-sm btn-dark mx-auto mb-2" target="_blank">
-                Secure(UA)ll System
+                Access system
               </a>
               <a href="https://github.com/secureUAll/secureUAll" class="btn btn-sm btn-secondary mx-auto mb-2" target="_blank">
-                GitHub Organization
+                GitHub
               </a>
             </div>
           </div>
@@ -247,6 +247,39 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo -->
+    <section class="ftco-section bg-light ftco-slant ftco-slant-white py-6" id="section-demo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center ftco-animate">
+            <h2 class="text-uppercase ftco-uppercase">Demo</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <p class="lead">See our project in action!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="btn-group mx-auto mb-5" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary active changeVideo" data-video="https://www.youtube.com/embed/QN1odfjtMoo">Presentation</button>
+            <button type="button" class="btn btn-outline-primary changeVideo" data-video="https://www.youtube.com/embed/fOPGxQ4fgVw">Demo</button>
+          </div>
+          <iframe 
+            width="100%" 
+            height="600" 
+            id="video"
+            src="https://www.youtube.com/embed/QN1odfjtMoo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
@@ -498,6 +531,7 @@
     <script src="js/google-map.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 
     
   </body>

@@ -607,3 +607,27 @@ a.text-primary:focus, a.text-primary:hover {
 .modal-lg {
   max-width: 90%!important;
 }
+
+/* My clases */
+
+.btn-outline-primary {
+  color: #92d400;
+  border-color: #92d400;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:active:hover,
+.btn-outline-primary.active:hover,
+.show>.btn-outline-primary.dropdown-toggle,
+.show>.btn-outline-primary.dropdown-toggle:focus,
+.show>.btn-outline-primary.dropdown-toggle:hover {
+  background-color: #92d400;
+  color: #ffffff;
+  border-color: #92d400;
+  box-shadow: none;
+}
