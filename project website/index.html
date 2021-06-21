@@ -58,10 +58,10 @@
             <h2 class="h5 ftco-subheading ftco-animate">University of Aveiro </h2>
             <div class="d-flex flex-column mt-3">
               <a href="https://deti-vuln-mon.ua.pt/" class="btn btn-sm btn-dark mx-auto mb-2" target="_blank">
-                Access system
+                <i class="fas fa-shield-alt"></i> Secure(UA)ll system
               </a>
-              <a href="https://github.com/secureUAll/secureUAll" class="btn btn-sm btn-secondary mx-auto mb-2" target="_blank">
-                GitHub
+              <a href="https://github.com/secureUAll/" class="btn btn-sm btn-secondary mx-auto mb-2" target="_blank">
+                <i class="fab fa-github-square mr-1"></i> GitHub
               </a>
             </div>
           </div>
@@ -217,11 +217,13 @@
             <div class="item ftco-animate">
               <div class="media d-block text-left ftco-media d-flex flex-row">
                 <div class="ftco-icon mb-3 mr-auto col-8">
-                  <img src="images/prints/teste.png">
+                  <img src="images/prints/dashboard.png">
                 </div>
                 <div class="media-body my-auto text-left">
-                  <h5 class="mt-0">Some title 1</h5>
-                  <p>Loren ipsum</p>
+                  <h5 class="mt-0">Dashboard</h5>
+                  <p>
+                    Web platform available 24/7 using UA IDP access that allows the system management and vulnerability monitoring
+                  </p>
                 </div>
               </div>
             </div>
@@ -229,11 +231,13 @@
             <div class="item ftco-animate">
               <div class="media d-block text-left ftco-media d-flex flex-row">
                 <div class="ftco-icon mb-3 mr-auto col-8">
-                  <img src="images/prints/teste.png">
+                  <img src="images/prints/alerts.png">
                 </div>
                 <div class="media-body my-auto text-left">
-                  <h5 class="mt-0">Some title 2</h5>
-                  <p>Loren ipsum</p>
+                  <h5 class="mt-0">Alerts</h5>
+                  <p>
+                    Email sent periodically, after a vulnerability is detected. It informs the manager of its existence and suggests possible corrections
+                  </p>
                 </div>
               </div>
             </div>
@@ -241,11 +245,27 @@
             <div class="item ftco-animate">
               <div class="media d-block text-left ftco-media d-flex flex-row">
                 <div class="ftco-icon mb-3 mr-auto col-8">
-                  <img src="images/prints/teste.png">
+                  <img src="images/prints/scrapping.png">
                 </div>
                 <div class="media-body my-auto text-left">
-                  <h5 class="mt-0">Some title 3</h5>
-                  <p>Loren ipsum</p>
+                  <h5 class="mt-0">Scrapping</h5>
+                  <p>
+                    With a configurable periodicity and with several levels (from the less to the most evasive), it makes use of external pluggable tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item ftco-animate">
+              <div class="media d-block text-left ftco-media d-flex flex-row">
+                <div class="ftco-icon mb-3 mr-auto col-8">
+                  <img src="images/prints/vulns.png">
+                </div>
+                <div class="media-body my-auto text-left">
+                  <h5 class="mt-0">Vulnerability Analysis</h5>
+                  <p>
+                    Based on the data gathered by scraping tools, the risk is computed based on CVSS and the vulnerability scan
+                  </p>
                 </div>
               </div>
             </div>
@@ -259,10 +279,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center ftco-animate">
-            <h2 class="text-uppercase ftco-uppercase">Demo</h2>
+            <h2 class="text-uppercase ftco-uppercase">Presentation/Demo</h2>
             <div class="row justify-content-center">
               <div class="col-md-7">
-                <p class="lead">See our project in action!</p>
+                <p class="lead">Get to know and see our project in action!</p>
               </div>
             </div>
           </div>
@@ -270,19 +290,25 @@
         <!-- END row -->
         <div class="row">
           <div class="btn-group mx-auto mb-5" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-outline-primary active changeVideo" data-video="https://www.youtube.com/embed/QN1odfjtMoo">Presentation</button>
-            <button type="button" class="btn btn-outline-primary changeVideo" data-video="https://www.youtube.com/embed/fOPGxQ4fgVw">Demo</button>
+            <button type="button" class="btn btn-outline-primary changeVideo" data-video="" onClick="alert('Available soon! &#9203;')">
+              Presentation (Soon)
+            </button>
+            <button type="button" class="btn btn-outline-primary changeVideo" data-video="" onClick="alert('Available soon! &#9203;')">
+              Demo (Soon)
+            </button>
           </div>
+          <!--
           <iframe 
             width="100%" 
             height="600" 
             id="video"
-            src="https://www.youtube.com/embed/QN1odfjtMoo" 
+            src="" 
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
           ></iframe>
+          -->
         </div>
       </div>
     </section>
@@ -306,11 +332,11 @@
               <img src="images/andre.jpg" class="img-fluid img-thumbnail" style="max-height: 200px;">
             </figure>
             <div class="text-center">
-              <h3 class="h4">André Morais</h3>
+              <h3 class="h4">André<br/>Morais</h3>
               <p class="mb-0">Lead Developer</p>
               <p class="">
                 moraisandre@ua.pt
-                <a href="https://github.com/moraisandreua" target="_blank" title="GitHub Page"><span class="icon-github"></span></a>
+                <a href="https://github.com/moraisandreua" target="_blank" title="GitHub Page"><i class="fab fa-github-square"></i></a>
               </p>
             </div>
           </div>
@@ -320,11 +346,11 @@
               <img src="images/eduardo.jpg" class="img-fluid img-thumbnail" style="max-height: 200px;">
             </figure>
             <div class="text-center">
-              <h3 class="h4">Eduardo Santos</h3>
+              <h3 class="h4">Eduardo<br/>Santos</h3>
               <p class="mb-0">Product Owner</p>
               <p class="">
                 eduardosantoshf@ua.pt
-                <a href="https://github.com/eduardosantoshf" target="_blank" title="GitHub Page"><span class="icon-github"></span></a>
+                <a href="https://github.com/eduardosantoshf" target="_blank" title="GitHub Page"><i class="fab fa-github-square"></i></a>
               </p>
             </div>
           </div>
@@ -334,11 +360,11 @@
               <img src="images/gmatos.JPG" class="img-fluid img-thumbnail" style="max-height: 200px;">
             </figure>
             <div class="text-center">
-              <h3 class="h4">Gonçalo Matos</h3>
+              <h3 class="h4">Gonçalo<br/>Matos</h3>
               <p class="mb-0">Architect</p>
               <p class="">
                 gmatos.ferreira@ua.pt
-                <a href="https://github.com/gmatosferreira" target="_blank" title="GitHub Page"><span class="icon-github"></span></a>
+                <a href="https://github.com/gmatosferreira" target="_blank" title="GitHub Page"><i class="fab fa-github-square"></i></a>
               </p>
             </div>
           </div>
@@ -350,11 +376,11 @@
               <img src="images/isadora.jpg" class="img-fluid img-thumbnail" style="max-height: 200px;">
             </figure>
             <div class="text-center">
-              <h3 class="h4">Isadora Loredo</h3>
+              <h3 class="h4">Isadora<br/>Loredo</h3>
               <p class="mb-0">Tester</p>
               <p class="">
                 isadora.fl@ua.pt
-                <a href="https://github.com/flisadora" target="_blank" title="GitHub Page"><span class="icon-github"></span></a>
+                <a href="https://github.com/flisadora" target="_blank" title="GitHub Page"><i class="fab fa-github-square"></i></a>
               </p>
             </div>
           </div>
@@ -364,11 +390,11 @@
               <img src="images/guida.jpg" class="img-fluid img-thumbnail center" style="max-height: 200px;">
             </figure>
             <div class="text-center">
-              <h3 class="h4">Margarida Martins</h3>
+              <h3 class="h4">Margarida<br/>Martins</h3>
               <p class="mb-0">DevOps</p>
               <p class="">
                 margarida.martins@ua.pt
-                <a href="https://github.com/margaridasmartins" target="_blank" title="GitHub Page"><span class="icon-github"></span></a>
+                <a href="https://github.com/margaridasmartins" target="_blank" title="GitHub Page"><i class="fab fa-github-square"></i></a>
               </p>
             </div>
           </div>
@@ -378,11 +404,11 @@
               <img src="images/pbastos.jpg" class="img-fluid img-thumbnail" style="max-height: 200px;">
             </figure>
             <div class="text-center">
-              <h3 class="h4">Pedro Bastos</h3>
+              <h3 class="h4">Pedro<br/>Bastos</h3>
               <p class="mb-0">Team Manager</p>
               <p class="">
                 pedro.bas@ua.pt
-                <a href="https://github.com/bastos-01" target="_blank" title="GitHub Page"><span class="icon-github"></span></a>
+                <a href="https://github.com/bastos-01" target="_blank" title="GitHub Page"><i class="fab fa-github-square"></i></a>
               </p>
             </div>
           </div>
@@ -392,29 +418,41 @@
           <div class="col-lg-3 mb-5 ftco-animate d-flex flex-column">
             <figure class="mx-auto"><img src="images/jp-barraca.jpeg" class="img-fluid img-thumbnail" style="max-height: 200px;"></figure>
             <div class="text-center">
-              <h3 class="h4">João Paulo Barraca</h3>
-              <p class="mb-0">Advisor</p>
+              <h3 class="h4">João Paulo<br/>Barraca</h3>
+              <p class="mb-0">
+                Advisor
+                <a href="https://www.ua.pt/pt/p/10333322" target="_blank" title="UA Profile"><i class="fas fa-user-astronaut"></i></a>
+              </p>
             </div>
           </div>
           <div class="col-lg-3 mb-5 ftco-animate d-flex flex-column">
             <figure class="mx-auto"><img src="images/andre-zuq.jpeg" class="img-fluid img-thumbnail" style="max-height: 200px;"></figure>
             <div class="text-center">
-              <h3 class="h4">André Zúquete</h3>
-              <p class="mb-0">Co-Advisor</p>
+              <h3 class="h4">André<br/>Zúquete</h3>
+              <p class="mb-0">
+                Co-Advisor
+                <a href="https://www.ua.pt/pt/p/10320078" target="_blank" title="UA Profile"><i class="fas fa-user-astronaut"></i></a>
+              </p>
             </div>
           </div>
           <div class="col-lg-3 mb-5 ftco-animate d-flex flex-column">
             <figure class="mx-auto"><img src="images/ricardo.jpeg" class="img-fluid img-thumbnail" style="max-height: 200px;"></figure>
             <div class="text-center">
-              <h3 class="h4">Ricardo Martins</h3>
-              <p class="mb-0">Colaborator</p>
+              <h3 class="h4">Ricardo<br/>Martins</h3>
+              <p class="mb-0">
+                Colaborator
+                <a href="https://www.ua.pt/pt/p/10315745" target="_blank" title="UA Profile"><i class="fas fa-user-astronaut"></i></a>
+              </p>
             </div>
           </div>
           <div class="col-lg-3 mb-5 ftco-animate d-flex flex-column">
             <figure class="mx-auto"><img src="images/vitor-cunha.png" class="img-fluid img-thumbnail" style="max-height: 200px;"></figure>
             <div class="text-center">
-              <h3 class="h4">Vitor Cunha</h3>
-              <p class="mb-0">Colaborator</p>
+              <h3 class="h4">Vitor<br/>Cunha</h3>
+              <p class="mb-0">
+                Colaborator
+                <a href="https://www.it.pt/Members/Index/24425" target="_blank" title="UA Profile"><i class="fas fa-user-astronaut"></i></a>
+              </p>
             </div>
           </div>
         </div>
@@ -465,7 +503,7 @@
                   <div class="ftco-icon mb-3 mx-auto"><img src="images/github.png"></div>
                   <div class="media-body text-center mx-auto">
                     <h5 class="mt-0">Git Platform</h5>
-                    <p>Github: Private Repository</p>
+                    <p>Github: Private organization</p>
                   </div>
                 </div>
               </div>
@@ -475,7 +513,7 @@
                   <div class="ftco-icon mb-3 mx-auto"><img src="images/teams.png"></div>
                   <div class="media-body mx-auto text-center">
                     <h5 class="mt-0">Mentoring</h5>
-                    <p>Microsoft Teams: mentoring communication</p>
+                    <p>Teams and Zoom: mentoring communication</p>
                   </div>
                 </div>
               </div>
@@ -495,7 +533,7 @@
                   <div class="ftco-icon mb-3 mx-auto"><img src="images/slack-logo.jpg"></div>
                   <div class="media-body mx-auto text-center">
                     <h5 class="mt-0">Team communication</h5>
-                    <p>Slack: internal discussion</p>
+                    <p>Slack and Meet: internal discussion</p>
                   </div>
                 </div>
               </div>
@@ -511,7 +549,7 @@
         <div class="row">
           <div class="col-md text-center">
             <p>&copy; Secure(UA)ll 2021 &nbsp &nbsp 
-            <a href="https://github.com/secureUAll/secureUAll"  target="_blank"><span class="icon-github"></span></a></p>
+              <a title="Code repository" href="https://github.com/secureUAll/" target="_blank"><i class="fab fa-github-square"></i></a></p>
           </div>
         </div>
       </div>
