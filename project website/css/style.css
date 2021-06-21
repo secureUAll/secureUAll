@@ -631,3 +631,25 @@ a.text-primary:focus, a.text-primary:hover {
   border-color: #92d400;
   box-shadow: none;
 }
+
+.navbar img {
+  transition: .3s ease all;
+}
+
+.navbar img.dark {
+  opacity: 0;
+  display: none;
+}
+.navbar img.light {
+  opacity: 1;
+  display: inline-block;
+}
+
+.navbar.scrolled img.dark {
+  opacity: 1;
+  display: inline-block;
+}
+.navbar.scrolled img.light {
+  opacity: 0;
+  display: none;
+}
