@@ -31,7 +31,7 @@ This project's report can be accessed [here](https://github.com/secureUAll/secur
 This project's grade was **17** out of 20.
 
 ## Team Members
-* **André Morais**:[moraisandreua](https://github.com/moraisandreua)
+* **André Morais**: [moraisandreua](https://github.com/moraisandreua)
 * **Eduardo Santos**: [eduardosantoshf](https://github.com/eduardosantoshf)
 * **Gonçalo Matos**: [gmatosferreira](https://github.com/gmatosferreira)
 * **Isadora Loredo**: [flisadora](https://github.com/flisadora)
